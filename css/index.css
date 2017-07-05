@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:  #fdffdd;
+}
+.container {
+    width: 780px;
+    height: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    position: relative;
+}
+.btns {
+    background-color: rgba(86, 125, 66, 0.8);
+    position: absolute;
+    bottom: 0;
+    right: -260px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 1px 0px #333;
+    display: none;
+}
+.btns > div {
+    text-align: center;    padding: 4px 12px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+
+}
+.btns > div::before,
+.btns > div::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.btns > div:nth-child(2n+1) {
+    background-color: yellowgreen;
+}
+.btns > div:nth-child(2n) {
+    background-color: lightgreen;
+}
+.btns > div:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.btns > div:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.btns span {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 6px;
+}
+.btns span:nth-child(2){
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 0 6px;
+}
+.btns span.btn {
+    font-size: 12px;
+    cursor: pointer;
+    width: 36px;
+    border-radius: 18px;
+    text-align: center;
+    line-height: 36px;
+    background: radial-gradient(circle,#fff,#eee,#333);
+}
+.btns span.btn:hover {
+    background: radial-gradient(circle,#fff,#333);
+}
+.btns span.btn:active{
+    background: radial-gradient(circle,#fff,rgba(255, 0, 0, 0.8));
+}
+.btns .reset {
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #fff;
+    border-radius: 4px;
+}
